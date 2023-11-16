@@ -1,0 +1,336 @@
+$ pwd
+/c/Users/Пользователь
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~ (main)
+$ mkdir repo4
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~ (main)
+$ cd /c/Users/Пользователь/repo4
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ touch index.html
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ echo "Содержание файла index.html">>index.html
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git add .
+warning: in the working copy of 'repo4/index.html', LF will be replaced by CRLF the next time Git touches it
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git commit -m "Создан файл index.html с содержанием"
+[main a7e7879] Создан файл index.html с содержанием
+ 1 file changed, 1 insertion(+)
+ create mode 100644 repo4/index.html
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ echo "Внесено первое изменение в файл index.html ">>index.html
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git add index.html
+warning: in the working copy of 'repo4/index.html', LF will be replaced by CRLF the next time Git touches it
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git commit -m "Первое изменение в файле index.html"
+[main 2916ba8] Первое изменение в файле index.html
+ 1 file changed, 1 insertion(+)
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ echo "Внесено второе изменение в файл index.html ">>index.html
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git add index.html
+warning: in the working copy of 'repo4/index.html', LF will be replaced by CRLF the next time Git touches it
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git commit -m "Второе изменение в файле index.html"
+[main 7c7dc5f] Второе изменение в файле index.html
+ 1 file changed, 1 insertion(+)
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git branch develop
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git branch
+  develop
+* main
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git checkout develop
+Switched to branch 'develop'
+D       copy/README
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "Hello, world!">>README.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git add README.md
+warning: in the working copy of 'repo4/README.md', LF will be replaced by CRLF the next time Git touches it
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git commit -m "Создан файл README.md с текстом"
+[develop b5e376a] Создан файл README.md с текстом
+ 1 file changed, 1 insertion(+)
+ create mode 100644 repo4/README.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ touch LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git add LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git commit -m "Создан файл LICENCE.md"
+[develop 66a2101] Создан файл LICENCE.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 repo4/LICENCE.md
+
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "copyright (c) <year> <copyright holders>">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "Permission is hereby granted, free of charge, to any person obtaining a copy">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "of this software and associated documentation files (the "Software"), to deal">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "in the Software without restriction, including without limitation the rights">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "copies of the Software, and to permit persons to whom the Software is">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "furnished to do so, subject to the following conditions:">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "The above copyright notice and this permission notice shall be included in all">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "copies or substantial portions of the Software.">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ echo "SOFTWARE.">>LICENCE.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ cat LICENCE.md
+copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the Software), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ touch .env
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git add .env
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git commit -m "Создание пустого файла .env в ветке develop"
+[develop 6a9e04c] Создание пустого файла .env в ветке develop
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 repo4/.env
+
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git add LICENCE.md
+warning: in the working copy of 'repo4/LICENCE.md', LF will be replaced by CRLF the next time Git touches it
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git commit -m "В файл LICENCE.md добавлен текст"
+[develop 3133c89] В файл LICENCE.md добавлен текст
+ 1 file changed, 19 insertions(+)
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git chekout main
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git checkout main
+Switched to branch 'main'
+D       copy/README
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git branch
+  develop
+* main
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git branch --merged develop
+  develop
+* main
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git branch --no-merged develop
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git log
+commit 7c7dc5f39404426832ca62fba2471c6e7e61443b (HEAD -> main)
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:36:06 2023 +0300
+
+    Второе изменение в файле index.html
+
+commit 2916ba844307cdbd88fe04dbe9fb355d2b03ac18
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:35:35 2023 +0300
+
+    Первое изменение в файле index.html
+
+commit a7e7879270158e442241f9174f552d1d4bb7462a
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:32:19 2023 +0300
+
+    Создан файл index.html с содержанием
+
+commit 94e9ad2355cff097cbd80c817e9496316578ad21
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Mon Nov 6 22:29:14 2023 +0300
+
+    Add README file
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git checkout develop
+Switched to branch 'develop'
+D       copy/README
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git log
+commit 3133c89819bbd3c1c2672c05220895c53957f295 (HEAD -> develop)
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:51:47 2023 +0300
+
+    В файл LICENCE.md добавлен текст
+
+commit 6a9e04c9555522a76e7348774e6d32fe203c4d69
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:47:59 2023 +0300
+
+    Создание пустого файла .env в ветке develop
+
+commit 66a2101f25991eea05bf86a355dd8e30d70098ac
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:40:46 2023 +0300
+
+    Создан файл LICENCE.md
+
+commit b5e376af428516f25aeb0b7034d27a5e5bd7dfd9
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:39:17 2023 +0300
+
+    Создан файл README.md с текстом
+
+commit 7c7dc5f39404426832ca62fba2471c6e7e61443b (main)
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:36:06 2023 +0300
+
+    Второе изменение в файле index.html
+
+commit 2916ba844307cdbd88fe04dbe9fb355d2b03ac18
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:35:35 2023 +0300
+
+    Первое изменение в файле index.html
+
+commit a7e7879270158e442241f9174f552d1d4bb7462a
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Thu Nov 16 21:32:19 2023 +0300
+
+    Создан файл index.html с содержанием
+
+commit 94e9ad2355cff097cbd80c817e9496316578ad21
+Author: Lilia Amirova <lg.amirova79@gmail.com>
+Date:   Mon Nov 6 22:29:14 2023 +0300
+
+    Add README file
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (develop)
+$ git checkout main
+Switched to branch 'main'
+D       copy/README
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git merge develop
+Updating 7c7dc5f..3133c89
+Fast-forward
+ repo4/.env       |  0
+ repo4/LICENCE.md | 19 +++++++++++++++++++
+ repo4/README.md  |  1 +
+ 3 files changed, 20 insertions(+)
+ create mode 100644 repo4/.env
+ create mode 100644 repo4/LICENCE.md
+ create mode 100644 repo4/README.md
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git branch
+  develop
+* main
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git add .
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git remote add origin git@github.com:LiliAmirova/repo1.git
+
+Пользователь@DESKTOP-9LC86IV MINGW64 ~/repo4 (main)
+$ git push -u origin main
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (31/31), 3.37 KiB | 1.69 MiB/s, done.
+Total 31 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To github.com:LiliAmirova/repo1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
